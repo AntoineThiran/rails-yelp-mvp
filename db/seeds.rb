@@ -9,5 +9,5 @@ require 'faker'
 
 country = ['chinese', 'italian', 'japanese', 'french', 'belgian']
 5.times do
-  Restaurant.create(name: Faker::Restaurant.name, address: Faker::Address.full_address, category: country.sample)
+  Restaurant.create!(name: Faker::Restaurant.name, address: Faker::Address.full_address, category: country.sample)
 end
